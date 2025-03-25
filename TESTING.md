@@ -53,24 +53,13 @@ npm run test:coverage
 
 This will create a coverage report in the `coverage` directory.
 
-## Test Variables
-
-The tests use the following test variables:
-
-```typescript
-server_id = 123;
-api_key = "1234";
-discord_user_id = "999";
-custom_quest_id = 1;
-```
-
 ## Integration Tests
 
-Integration tests are skipped by default because they require real API credentials and would make actual API calls.
+Integration tests are skipped by default as they require real API credentials and make actual API calls. The tests use environment variables for configuration.
 
-### Using Environment Variables (Recommended)
+### Setting Up Environment Variables
 
-The recommended approach for running integration tests is to use environment variables via `.env` files:
+To run integration tests:
 
 1. Install dotenv if not already installed:
    ```bash
@@ -85,9 +74,7 @@ The recommended approach for running integration tests is to use environment var
    CUSTOM_QUEST_ID=your_quest_id
    ```
 
-3. Add `.env` to your `.gitignore` file to prevent committing sensitive information
-
-4. Create a `.env.example` file to document required variables:
+3. Create a `.env.example` file to document required variables:
    ```
    SERVER_ID=
    API_KEY=
@@ -95,7 +82,7 @@ The recommended approach for running integration tests is to use environment var
    CUSTOM_QUEST_ID=
    ```
 
-5. Run the tests with:
+5. Run the tests:
    ```bash
    npm test
    ```
