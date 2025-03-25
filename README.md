@@ -23,7 +23,11 @@ yarn add communityone
 ## Quick Start
 
 ```typescript
+// TypeScript:
 import { CommunityOneSDK } from 'communityone';
+
+// JavaScript:
+// const { CommunityOneSDK } = require('communityone');
 
 // Initialize the SDK with your server ID and API key
 const sdk = new CommunityOneSDK(YOUR_SERVER_ID, "YOUR_API_KEY");
@@ -58,7 +62,11 @@ example();
 ## Example with Promises
 
 ```typescript
+// TypeScript:
 import { CommunityOneSDK } from 'communityone';
+
+// JavaScript:
+// const { CommunityOneSDK } = require('communityone');
 
 // Initialize the SDK with your server ID and API key
 const sdk = new CommunityOneSDK(YOUR_SERVER_ID, "YOUR_API_KEY");
