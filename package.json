@@ -1,0 +1,38 @@
+{
+  "name": "communityone",
+  "version": "1.0.0",
+  "description": "Official JavaScript/TypeScript SDK for interacting with the CommunityOne API",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "communityone",
+    "discord",
+    "community",
+    "api",
+    "sdk"
+  ],
+  "author": "CommunityOne",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.6.0",
+    "isomorphic-fetch": "^3.0.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.0",
+    "@types/node": "^20.8.0",
+    "dotenv": "^16.4.7",
+    "jest": "^29.5.0",
+    "ts-jest": "^29.1.0",
+    "typescript": "^5.2.2"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
