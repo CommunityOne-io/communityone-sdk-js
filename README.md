@@ -30,7 +30,7 @@ import { CommunityOneSDK } from 'communityone';
 // const { CommunityOneSDK } = require('communityone');
 
 // Initialize the SDK with your server ID and API key
-const sdk = new CommunityOneSDK(YOUR_SERVER_ID, "YOUR_API_KEY");
+const sdk = new CommunityOneSDK("YOUR_SERVER_ID", "YOUR_API_KEY");
 
 // Example usage with async/await
 async function example() {
@@ -69,7 +69,7 @@ import { CommunityOneSDK } from 'communityone';
 // const { CommunityOneSDK } = require('communityone');
 
 // Initialize the SDK with your server ID and API key
-const sdk = new CommunityOneSDK(YOUR_SERVER_ID, "YOUR_API_KEY");
+const sdk = new CommunityOneSDK("YOUR_SERVER_ID", "YOUR_API_KEY");
 
 // Get custom quests using promises
 sdk.getCustomQuests()
